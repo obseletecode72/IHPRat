@@ -1,0 +1,191 @@
+/* Reset básico */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+header {
+    background-color: #6a0dad; /* Cor roxa */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+section {
+    flex: 1;
+    min-width: 250px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+body.dark-mode section {
+    background: #444;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #6a0dad; /* Cor roxa */
+}
+
+body.dark-mode h2 {
+    color: #a065d9; /* Cor roxa mais clara */
+}
+
+#client-list {
+    list-style-type: none;
+}
+
+#client-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.dark-mode #client-list li {
+    background: #555;
+    border-color: #444;
+}
+
+#client-list li:hover {
+    background-color: #f1f1f1;
+}
+
+body.dark-mode #client-list li:hover {
+    background-color: #666;
+}
+
+#screenshots img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: block;
+    margin-top: 10px;
+}
+
+button#dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #6a0dad; /* Cor roxa */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button#dark-mode-toggle svg {
+    width: 1.2em;
+    height: 1.2em;
+    fill: currentColor;
+}
+
+body.dark-mode button#dark-mode-toggle {
+    background: #f4f4f9;
+    color: #333;
+}
+
+body.dark-mode button#dark-mode-toggle:hover {
+    background: #ddd;
+}
+
+/* Estilo do botão "Tela" */
+.screen-button {
+    background: #6a0dad; /* Cor roxa */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.screen-button svg {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.screen-button:hover {
+    background: #a065d9; /* Cor roxa mais clara */
+}
+
+body.dark-mode .screen-button {
+    background: #f4f4f9;
+    color: #333;
+}
+
+body.dark-mode .screen-button:hover {
+    background: #ddd;
+}
+
+/* Adicionando estilo para o contêiner de notificações */
+.notifications-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.notification {
+    background: #6a0dad; /* Cor roxa */
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-weight: bold;
+    animation: fadeInOut 3s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
