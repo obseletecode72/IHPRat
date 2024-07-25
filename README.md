@@ -21,4 +21,5 @@ This project works in EXE (Client) and JS with (Server).
 - Windows API
 - WebSocket
 
-OBS: I am not responsible for anything, this project was made for educational purposes and for fun.
+## OBS:
+- I am not responsible for anything, this project was made for educational purposes and for fun.
