@@ -32,3 +32,6 @@ This project works in EXE (Client) and JS with (Server).
 
 ## OBS:
 - I am not responsible for anything, this project was made for educational purposes and for fun.
+
+## OBS2:
+- To run in localhost change ip "0.0.0.0" to "127.0.0.1" else wont work
